@@ -4,8 +4,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: ["gatsby-plugin-sitemap",
-            "gatsby-plugin-image",
-            "gatsby-plugin-sharp", 
+            "gatsby-plugin-sharp",
             {
               resolve: "gatsby-source-filesystem",
               options: {
@@ -13,6 +12,7 @@ module.exports = {
                 path: `${__dirname}/blog`,
               }
             },
-             "gatsby-plugin-mdx",   
+            "gatsby-plugin-mdx",
+            "gatsby-transformer-sharp",   
       ]
   };
